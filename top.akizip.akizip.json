@@ -10,16 +10,8 @@
         "--device=dri",
         "--socket=wayland"
     ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
+    "cleanup-commands": [
+        "python3 -m compileall --invalidation-mode=unchecked-hash /app"
     ],
     "modules" : [
         {
@@ -28,7 +20,8 @@
             "build-commands": [
                 "make -j ${FLATPAK_BUILDER_N_JOBS} -C CPP/7zip/Bundles/Alone2 -f ../../cmpl_gcc.mak",
                 "make -j ${FLATPAK_BUILDER_N_JOBS} -C CPP/7zip/Bundles/SFXCon -f ../../cmpl_gcc.mak",
-                "install -Dm755 CPP/7zip/Bundles/Alone2/b/g/7zz   /app/bin/7zz"
+                "install -Dm755 CPP/7zip/Bundles/Alone2/b/g/7zz -t /app/bin/",
+                "install -Dm755 DOC/{copying.txt,License.txt,unRarLicense.txt} -t $FLATPAK_DEST/share/licenses/$FLATPAK_ID/7-zip/"
             ],
             "sources": [
                 {

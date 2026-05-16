@@ -43,7 +43,6 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "branch": "develop",
                     "commit":"a6ebad90d83c33aa4067726ad375fa6876b4a9ba",
                     "url" : "https://github.com/akizip/akizip"
                 }

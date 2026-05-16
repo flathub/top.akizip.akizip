@@ -44,7 +44,7 @@
                 {
                     "type" : "git",
                     "tag":"frtest",
-                    "commit":"a6ebad90d83c33aa4067726ad375fa6876b4a9ba,
+                    "commit":"a6ebad90d83c33aa4067726ad375fa6876b4a9ba",
                     "url" : "https://github.com/akizip/akizip"
                 }
             ]

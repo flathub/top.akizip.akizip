@@ -43,8 +43,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "tag": "0.4.3",
-                    "commit": "89c8897fd2ec665cb7dee6f9f4a81d20d0c251a4",
+                    "tag": "0.4.4",
+                    "commit": "9f2ac0748316167a66a9def188c80f2c2a620d2c",
                     "url": "https://github.com/akizip/akizip"
                 }
             ]
